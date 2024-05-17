@@ -34,12 +34,4 @@ example = [ 'test', 'a', 'is']
 time    = { :that => 'This', :period => '.'}
 puts "#{time[:that]} #{example[2]} #{example[1]} #{example[0]}#{time[:period]} \n\n"
 
-# 2) Create an array of hashes named ‘ghosts’ to hold the following information:
 
-
-# 3) Write a script that uses the JSON provided by the dog.ceo API to print out a nicely formatted list of dog breeds and sub-breeds. 
-
-
-
-# 4) Using data from the city's open data set figure out how many of our trees may die now that the Emerald Ash Borer has been found here. 
-#    In other words, how many Ash trees do we have in the city? 
