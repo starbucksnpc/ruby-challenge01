@@ -14,15 +14,13 @@ require 'pp'
 # URL for the tree dataset
 url = 'https://data.winnipeg.ca/resource/d3jk-hb6j.json'
 
-# Function to fetch and parse JSON data
-def fetch_and_parse_data(url)
-  uri = URI(url)
-  response = Net::HTTP.get(uri)
-  JSON.parse(response)
-end
+# URL for the full tree dataset
+# url = 'https://data.winnipeg.ca/resource/d3jk-hb6j.json?$limit=306000'
 
-# Fetch and parse the tree data
-tree_data = fetch_and_parse_data(url)
+uri = URI(url)
+response = Net::HTTP.get(uri)
+
+tree_data = JSON.parse(response) # Convert JSON data into Ruby data.
 
 # Counter for Ash trees
 ash_tree_count = 0
