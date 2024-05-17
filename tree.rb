@@ -12,10 +12,10 @@ require 'json'
 require 'pp'
 
 # URL for the tree dataset
-url = 'https://data.winnipeg.ca/resource/d3jk-hb6j.json'
+# url = 'https://data.winnipeg.ca/resource/d3jk-hb6j.json'
 
 # URL for the full tree dataset
-# url = 'https://data.winnipeg.ca/resource/d3jk-hb6j.json?$limit=306000'
+url = 'https://data.winnipeg.ca/resource/d3jk-hb6j.json?$limit=306000'
 
 uri = URI(url)
 response = Net::HTTP.get(uri)
